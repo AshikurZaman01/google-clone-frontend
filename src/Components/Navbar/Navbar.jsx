@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { GoSun } from "react-icons/go";
 import { FaRegMoon } from "react-icons/fa";
+import Search from "./Search";
 
 const Navbar = ({ darkTheme, setDarkTheme }) => {
     return (
@@ -15,8 +16,9 @@ const Navbar = ({ darkTheme, setDarkTheme }) => {
                     <button type="button" onClick={() => setDarkTheme(!darkTheme)} className="text-2xl dark:bg-gray-50 dark:text-gray-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg">
                         {darkTheme ? <GoSun /> : <FaRegMoon />}
                     </button>
-
                 </div>
+
+                <Search></Search>
 
             </div>
         </div>
