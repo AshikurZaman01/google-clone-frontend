@@ -2,7 +2,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 const Routes = () => {
     return (
-        <div className="p-4">
+        <div className="p-4 m-10 bg-red-200">
             <Switch>
                 <Route exact path="/">
                     <Redirect to="/search" />
